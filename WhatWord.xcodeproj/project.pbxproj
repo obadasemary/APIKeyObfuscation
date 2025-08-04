@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF76C0AC2E41490A0068E2E0 /* ConfidentialKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF76C0AB2E41490A0068E2E0 /* ConfidentialKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BB4503D12E0096B1005311FA /* WhatWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF76C0AC2E41490A0068E2E0 /* ConfidentialKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +64,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF76C0AF2E4149510068E2E0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BB4503D32E0096B1005311FA /* WhatWord */,
 			);
 			name = WhatWord;
 			packageProductDependencies = (
+				AF76C0AB2E41490A0068E2E0 /* ConfidentialKit */,
 			);
 			productName = WhatWord;
 			productReference = BB4503D12E0096B1005311FA /* WhatWord.app */;
@@ -94,6 +101,10 @@
 			);
 			mainGroup = BB4503C82E0096B1005311FA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF76C0AA2E41490A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential" */,
+				AF76C0AD2E41492A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential-plugin" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BB4503D22E0096B1005311FA /* Products */;
 			projectDirPath = "";
@@ -123,6 +134,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF76C0AF2E4149510068E2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = AF76C0AE2E4149510068E2E0 /* Confidential */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BB4503DA2E0096B2005311FA /* Debug */ = {
@@ -253,7 +271,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = KM569NM77P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -267,7 +285,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.WhatWord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Obada.WhatWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -282,7 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = KM569NM77P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.WhatWord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Obada.WhatWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,6 +344,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF76C0AA2E41490A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/securevale/swift-confidential";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		AF76C0AD2E41492A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential-plugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/securevale/swift-confidential-plugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF76C0AB2E41490A0068E2E0 /* ConfidentialKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF76C0AA2E41490A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential" */;
+			productName = ConfidentialKit;
+		};
+		AF76C0AE2E4149510068E2E0 /* Confidential */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF76C0AD2E41492A0068E2E0 /* XCRemoteSwiftPackageReference "swift-confidential-plugin" */;
+			productName = "plugin:Confidential";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB4503C92E0096B1005311FA /* Project object */;
 }
